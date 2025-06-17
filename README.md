@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+💡 THE FUTURE OF PLATFORM AS A SERVICE (PaaS)
 
-## Getting Started
+This project demonstrates full-stack deployment, server provisioning, reverse proxy configuration, and frontend development — all essential skills for a cloud engineer.
 
-First, run the development server:
+The future of PaaS lies in seamless developer experiences and automatic scaling infrastructure. This prototype envisions a smart PaaS tool that helps startups deploy with minimal configuration, faster delivery, and cost-efficient scalability — built on the flexibility of open-source frameworks and cloud-native services.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🛠️ Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Cloud Provider: AWS EC2 (Ubuntu 22.04)
+Web Server: Nginx (Reverse proxy)
+Application Framework: Node.js (Next.js 15)
+Frontend Enhancements: TailwindCSS, React Icons
+Deployment: GitHub → EC2 via Git
+Security: UFW Firewall, Ports 80 and 443 allowed
+📦 Project Structure
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+bioaltschool/
+├── app/
+│   └── page.js         # Dynamic landing page
+├── public/             # Static assets
+├── styles/             # Tailwind & CSS
+├── package.json
+├── next.config.mjs
+└── README.md
+✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Responsive landing page with:
+Name & role
+Project pitch
+Professional bio
+Deployed via Nginx reverse proxy to EC2 instance
+Optional: SSL with Let's Encrypt (Certbot ready)
+GitHub integration for version control and deployment
+📄 Step-by-Step Setup
 
-## Learn More
+1. ✅ Provision EC2 Ubuntu Server
+Launched EC2 instance (Ubuntu 22.04)
+Created and downloaded .pem key pair
+Connected via SSH
+2. 🌐 Install Nginx & Configure Reverse Proxy
+   -sudo apt update && sudo apt install nginx
+Restarted Nginx:
+   sudo nginx -t
+   sudo systemctl reload nginx
+3. 📦 Deploy Next.js App
+Locally:
 
-To learn more about Next.js, take a look at the following resources:
+Initialized project with:
+npx create-next-app@latest
+Created app/page.js as the dynamic landing page
+Added TailwindCSS and custom styling
+Pushed project to GitHub
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+On EC2:
+Installed Git, Node.js, and npm
+Cloned repo:
+git clone git@github.com:Cogito-ergo-sum1/bioaltschool.git
+cd bioaltschool
+npm install
+npm run build
+npm start
+4. 🔒 Networking & Security
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+Access the live demo:
+http://63.35.228.54
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Screenshot of my landing page](../Screenshot.png)
