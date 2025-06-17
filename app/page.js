@@ -34,9 +34,8 @@ export default function Home() {
             <h2 className="text-2xl font-semibold">Omole Fitzgerald <span className="text-blue-600 text-xl">(Cloud Administrator)</span></h2>
          
             <p className="text-gray-600 mt-8">
-              I am a Cloud Engineering enthusiast & IT consultant with experience developing AL-based web applications and supporting enterprise operations across sectors. a passionate full-stack developer focused on building high-performance web applications. My
-              background spans both frontend UI/UX design and scalable backend systems. I enjoy turning
-              complex problems into clean and intuitive solutions.
+              I'm a cloud computing and DevOps enthusiast with hands-on experience deploying web applications using technologies like AWS EC2, Nginx, and Node.js. I enjoy building scalable, automated systems and learning how cloud infrastructure powers modern applications.
+               Currently, I'm working on personal projects that demonstrate server provisioning, reverse proxy configuration, and CI/CD deployment workflows. There is a lot of work to be done.
             </p>
             
             <div className="flex mt-4 space-x-4 text-blue-500 text-xl">

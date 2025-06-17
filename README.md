@@ -65,4 +65,4 @@ npm start
 Access the live demo:
 http://63.35.228.54
 
-![Screenshot of my landing page](../Screenshot.png)
+![Screenshot of my landing page](Screenshot.png)
