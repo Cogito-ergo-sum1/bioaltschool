@@ -1,8 +1,7 @@
 💡 THE FUTURE OF PLATFORM AS A SERVICE (PaaS)
 
-This project demonstrates full-stack deployment, server provisioning, reverse proxy configuration, and frontend development — all essential skills for a cloud engineer.
+This project doesn't particularly dwell on the above topic however it demonstrates full-stack deployment, server provisioning, reverse proxy configuration, and frontend development — all essential skills for a cloud engineer.
 
-The future of PaaS lies in seamless developer experiences and automatic scaling infrastructure. This prototype envisions a smart PaaS tool that helps startups deploy with minimal configuration, faster delivery, and cost-efficient scalability — built on the flexibility of open-source frameworks and cloud-native services.
 
 🛠️ Tech Stack
 
@@ -11,7 +10,8 @@ Web Server: Nginx (Reverse proxy)
 Application Framework: Node.js (Next.js 15)
 Frontend Enhancements: TailwindCSS, React Icons
 Deployment: GitHub → EC2 via Git
-Security: UFW Firewall, Ports 80 and 443 allowed
+Security: UFW Firewall, Ports 80.
+
 📦 Project Structure
 
 bioaltschool/
@@ -29,7 +29,6 @@ Name & role
 Project pitch
 Professional bio
 Deployed via Nginx reverse proxy to EC2 instance
-Optional: SSL with Let's Encrypt (Certbot ready)
 GitHub integration for version control and deployment
 📄 Step-by-Step Setup
 
@@ -54,7 +53,7 @@ Pushed project to GitHub
 On EC2:
 Installed Git, Node.js, and npm
 Cloned repo:
-git clone git@github.com:Cogito-ergo-sum1/bioaltschool.git
+git clone 
 cd bioaltschool
 npm install
 npm run build
